@@ -14,12 +14,18 @@ A step by step series of examples that tell you how to get a development environ
 ```
 dotnet restore
 ```
-3. Add database key. Within root directory `DocumentDBRepository.cs` line 16 is missing string Key value, 
-the key is provided in the email.
-
+3. Add database key. Within root directory `DocumentDBRepository.cs` line 16 is missing correct string Key value, 
+the correct key is provided in the email.
+```
+16.   private readonly string Key = "InsertKeyHere";
+```
 4. Next, build the solution by running:
 ```
 dotnet build
+```
+5. To run the application, either use **.NET Run command** or press **F5 in Visual Studio** from project root directory.
+```
+dotnet run
 ```
 ### Live Demo
 [MVC App](https://invoicesappmvc.azurewebsites.net/Invoice/Index)
