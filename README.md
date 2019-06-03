@@ -27,10 +27,20 @@ dotnet build
 ```
 dotnet run
 ```
+
 ### Live Demo
 [MVC App](https://invoicesappmvc.azurewebsites.net/Invoice/Index)
 
 [API](https://invoicesappmvc.azurewebsites.net/api)
+
+### API Context
+**GET** `api/GetUnpaidInvoices`
+
+**PUT** `api/PayInvoice?id=`
+
+**PATCH** `api/JsonPatchWithModelState`
+
+**Authentication Header** `SecretKey:a38a14ed3f154a25afa278bf304cadad`
 
 ## Built With
 * [ASP.NET Core 2.2](https://github.com/aspnet/AspNetCore)
